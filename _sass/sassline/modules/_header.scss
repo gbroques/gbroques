@@ -1,0 +1,34 @@
+// Header demo styles.
+// ---------------------------------------
+
+.global-header {
+  background-color: $backgroundColour;
+  font-size: 0;
+  
+  $logo-size: 40px;
+  .global-header__logo {
+    background-image: url(../img/logo.svg);
+    background-size: $logo-size $logo-size;
+    color: transparent;
+    display: inline-block;
+    font: 0/0 a;
+    height: $logo-size;
+    margin: 2rem 0 2rem 3%;
+    position: relative;
+    vertical-align: middle;
+    width: $logo-size;
+    transition: transform .6s cubic-bezier(.68,-.55,.265,1.55);
+
+    @include breakpoint(break-1) {
+      margin-left: 2rem;
+    }
+
+    a {
+      bottom: 0;
+      left: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+  }
+}

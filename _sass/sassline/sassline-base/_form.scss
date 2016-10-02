@@ -1,0 +1,120 @@
+$base: #f44336;
+$text: #555;
+$invalid: #FF9100;
+$width: 100%;
+$cubic: cubic-bezier(.64,.09,.08,1);
+
+form {
+  width: $width;
+  margin: 100px auto 0;
+  padding: 0 0 40px;
+  color: $text;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  font: inherit;
+  transition: transform 0.3s ease-in-out,
+    font-size 0.3s ease-in-out,
+    visibility 0.3s ease-in-out;
+}
+
+input,
+textarea {
+  font: inherit;
+  margin: 28px 0px 15px;
+  width: $width;
+  display: block;
+  border: none;
+  padding: 35px 0 10px;
+  border-bottom: solid 1px $base;
+  background: rgba(255,255,255,0);
+  transition: background 0.3s $cubic;
+  resize: none;
+  overflow: hidden; 
+  &:focus::-webkit-input-placeholder {
+    color: $base;
+  }  
+  &:focus, 
+  &:valid {
+    box-shadow: none;
+    outline: none;
+    background-position: 0 0;
+    &::-webkit-input-placeholder {
+      font-size: 0.80em;
+      transform: translateY(-30px);
+      visibility: visible !important;
+      opacity: 1;
+    }
+  }  
+}
+
+input[type="email"] {
+  background: rgba(255,255,255,0);
+  transition: border-bottom 0.3s ease, background 0.3s ease;
+  &~span.validation-text {
+    position: absolute;
+    visibility: hidden;
+    font-size: 0.75em;
+    width: $width;
+    margin-top:-15px;
+    color: white;
+    transition: color 0.3s ease-in-out;
+  }
+  &:not([value=""]) {
+    &::-webkit-input-placeholder {
+      font-size: 0.80em;
+      transform: translateY(-20px);
+      visibility: visible !important;
+      opacity: 1;
+    }
+    &:focus::-webkit-input-placeholder {
+      color: $base;
+    }
+    &:focus:not(:valid)::-webkit-input-placeholder {
+      color: $invalid;
+    }
+  }
+  &:focus {
+    background-position: 0 0;
+    &:not(:valid):not([value=""]) {
+      border-bottom: solid 1px $invalid;
+    }
+  }
+  &:not(:focus):not(:valid):not([value=""]) {
+    &::-webkit-input-placeholder {
+      color: $invalid;
+    }
+    border-bottom: solid 1px $invalid;
+    &~span.validation-text {
+      visibility: visible;
+      color: $invalid;
+    }
+  }
+}
+
+.flex {
+  display: flex;
+  align-items: stretch;
+  textarea {
+    line-height: 120%;
+  }
+}
+
+button[type="submit"] {
+  position: relative;
+  font-family: 'Open Sans';
+  font-size: 1rem;
+  text-transform: uppercase;
+  outline: none;
+  font-weight: 700;
+  border: none;
+  background: #ef5350;
+  cursor: pointer;
+  border-radius: 3px;
+  padding: 18px;
+  width: $width;
+  color: white;
+  margin: 30px 0 0 0;
+  box-shadow: 0 3px 6px 0 rgba(0,0,0,0.2);
+}

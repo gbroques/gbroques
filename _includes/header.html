@@ -1,0 +1,19 @@
+<!-- HIDE ON SCROLL DOWN
+SHOW ON SCROLL UP -->
+<header class="global-header">
+  <h1 class="global-header__logo"><a href="{{ site.url }}">G Roques</a></h1>
+  <button style="display: none" id="hamburger-menu" class="nav-toggle hamburger hamburger--elastic" type="button" aria-label="Menu" aria-controls="navigation">
+	  <span class="hamburger-box">
+	    <span class="hamburger-inner"></span>
+	  </span>
+	  <span class="hamburger-label">Menu</span>
+	</button>
+  <nav class="main-nav">
+    <ul class="main-nav__list">
+      <li><a class="main-nav__link" {% if page.title == "Blog" %}class="active"{% endif %} href="/"><link class="rippleJS" />Blog</a></li>
+      <li><a class="main-nav__link" {% if page.title == "Projects" %}class="active"{% endif %} href="/projects"><link class="rippleJS" />Projects</a></li>
+      <li><a class="main-nav__link" {% if page.title == "About" %}class="active"{% endif %} href="/about"><link class="rippleJS" />About</a></li>
+      <li><a class="main-nav__link" {% if page.title == "Contact" %}class="active"{% endif %} href="/contact"><link class="rippleJS" />Contact</a></li>
+    </ul>
+  </nav>
+</header>

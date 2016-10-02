@@ -1,0 +1,163 @@
+// Navigation demo styles.
+// ---------------------------------------
+
+// responsive-nav.js styles.
+.nav-collapse {
+
+  ul {
+    display: block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  li {
+    display: block;
+    width: 100%;
+  }
+
+  &.opened {
+    max-height: 9999px;
+  }
+}
+
+.js {
+
+  .nav-collapse {
+    clip: rect(0 0 0 0);
+    display: block;
+    max-height: 0;
+    overflow: hidden;
+    position: absolute;
+    zoom: 1;
+
+    @include breakpoint(break-2) {
+      max-height: none;
+      position: relative;
+    }
+  }
+}
+
+.disable-pointer-events {
+  pointer-events: none;
+}
+
+.nav-toggle {
+  @include breakpoint(break-2) {
+    display: none;
+  }
+}
+
+// Demo overrides.
+.main-nav {
+
+  @include breakpoint(break-2) {
+    display: inline-block;
+    width: calc(100% - 132px - 2rem);
+    vertical-align: middle;
+  }
+
+  .main-nav__list {
+    border-top: 0.1rem solid darken($white, 15%);
+
+    @include breakpoint(break-2) {
+      border: 0;
+      background-color: transparent;
+      margin-left: 0;
+      text-align: right;
+      width: 100%;
+    }
+  }
+
+  li {
+    @include fontsize(16, 0);
+    font-family: unquote(map-get($headingtype, font-family));
+    font-style: normal;
+    font-weight: map-get($headingtype, regular);
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    a, span {
+      position: relative;
+      border-bottom: 0.1rem solid darken($white, 15%);
+      color: $captionColour;
+      cursor: pointer;
+      display: block;
+      padding: 15px 3%;
+
+      &:hover, &:active, &:focus {
+        background-color: $codeBackgroundColour;
+      }
+    }
+
+    @include breakpoint(break-2) {
+      @include fontsize(16, 2);
+
+      display: inline-block;
+      letter-spacing: 0.1rem;
+      margin-right: 1rem;
+      padding: 1rem 0;
+      text-transform: uppercase;
+      width: auto;
+
+      a, span {
+        border: 0;
+        color: $captionColour;
+        display: inline;
+        padding: 10px 15px;
+        border-radius: 2px;
+
+
+        &:hover, &:active, &:focus {
+          background-color: $codeBackgroundColour;
+          color: $captionColour;
+        }
+      }
+    }
+
+    // @include breakpoint(break-2) {
+    //   @include fontsize(18, 2);
+    // }
+
+    @include breakpoint(break-3) {
+      @include fontsize(18, 3);
+      margin-right: 2rem;
+    }
+
+    @include breakpoint(break-4) {
+      @include fontsize(18, 4);
+    }
+  }
+}
+
+.main-nav__link .rippleJS .ripple {
+  opacity: .1;
+}
+
+.js {
+
+  .nav-collapse {
+
+    @include breakpoint(break-2) {
+      display: inline-block;
+      max-height: none;
+      position: relative;
+    }
+  }
+
+  .nav-toggle {
+    outline: none;
+    display: block !important;
+    line-height: 0;
+    position: absolute;
+    right: 3%;
+    top: 1.4rem;
+
+    @include breakpoint(break-2) {
+      display: none !important;
+    }
+  }
+}
