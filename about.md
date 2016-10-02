@@ -5,6 +5,7 @@ permalink: /about
 ---
 # About
 This site is my platform to **share with you the knowledge I've gained** through my professional, academic, and personal life. I'm not exactly sure what I'll write about yet, but I plan on writing about the following topics:
+
 - Frontend development with React.js
 - Backend Development with Laravel
 - Command Line and Linux
