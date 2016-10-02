@@ -1,2 +1,2 @@
 #!/bin/bash
-cd ~/blogfolio && jekyll serve --host 0.0.0.0 --port 80
+cd ~/blogfolio && bundle exec jekyll serve --host 0.0.0.0 --port 80
