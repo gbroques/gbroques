@@ -9,7 +9,7 @@
 title: G Roques
 email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
-	Hi I'm G Roques. Currently I'm attending UMSL for my undergraduate degree in computer science and work as web developer for FitnessRepairParts.com. This website is my personal blog and portfolio, and is still under active development.
+  Hi I'm G Roques. Currently I'm attending UMSL for my undergraduate degree in computer science and work as a web developer for FitnessRepairParts.com. This website is my personal blog and portfolio, and is still under active development.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "groques.com" # the base hostname & protocol for your site
 twitter_username: jekyllrb
