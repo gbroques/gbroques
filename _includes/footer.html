@@ -5,17 +5,13 @@
     </svg>
   </p>
 </footer>
-
-<script>
-responsiveNav(".main-nav");
-
-// Grid toggle
-// function changeClass() {
-//   if ( document.getElementById("baseline").className.match(/(?:^|\s)show-grid(?!\S)/) ) {
-//     document.getElementById("baseline").className = document.getElementById("baseline").className.replace( /(?:^|\s)show-grid(?!\S)/g , '' )
-//   } else { document.getElementById("baseline").className += " show-grid"; }
-// }
-// document.getElementById("gridtoggle").addEventListener( 'click' , changeClass );
+<script type="text/javascript" src="{{ "/assets/js/responsive-nav.min.js" | prepend: site.baseurl }}"></script>
+<script type="text/javascript"  src="{{ "/assets/js/smooth-scroll.min.js" | prepend: site.baseurl }}"></script>
+<script type="text/javascript">
+	responsiveNav(".main-nav");
+	smoothScroll.init({
+		speed: 600,
+		easing: 'easeInOutCubic'
+	});
 </script>
-
- <script src="https://cdn.rawgit.com/samthor/rippleJS/v1.0.2/ripple.min.js"></script>
+<script src="https://cdn.rawgit.com/samthor/rippleJS/v1.0.2/ripple.min.js"></script>
