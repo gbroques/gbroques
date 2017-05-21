@@ -1,0 +1,27 @@
+{
+  "name": "gbroques",
+  "version": "1.0.0",
+  "description": "Personal portfolio and blog",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "uglify": "uglifyjs -o assets/js/main.min.js -- assets/_js/* node_modules/responsive-nav/responsive-nav.js node_modules/vanilla-ripplejs/ripple.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gbroques/gbroques.git"
+  },
+  "author": "G Roques",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gbroques/gbroques/issues"
+  },
+  "homepage": "https://github.com/gbroques/gbroques#readme",
+  "dependencies": {
+    "responsive-nav": "^1.0.39",
+    "vanilla-ripplejs": "^1.0.3"
+  },
+  "devDependencies": {
+    "uglify-js": "^3.0.10"
+  }
+}

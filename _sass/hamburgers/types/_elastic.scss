@@ -19,7 +19,8 @@
       }
     }
 
-    &.is-active {
+    // Changed from is-active to active for responsive nav
+    &.active {
       .hamburger-inner {
         $y-offset: $hamburger-layer-spacing + $hamburger-layer-height;
 
