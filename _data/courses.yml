@@ -1,0 +1,55 @@
+- id: 2250
+  name: Programming and Data Structures
+  description: Discusses properties and implementation of abstract data types such as lists, trees, stacks and queues. Introduces procedural and class abstraction, basic program architecture, use of interfaces, modular programming, and file processing.
+  projects:
+    - name: Wumpus World
+      url: https://github.com/gbroques/wumpus-world
+
+- id: 2261
+  name: Object-Oriented Programming
+  description: Introduces object-oriented concepts, terminology, and notation (UML) using Java. Covers encapsulation, classes, objects, inheritance, and the use of class libraries. Additional topics may include graphical user interfaces, applets, and related tools and technologies.
+  projects:
+    - name: Snake
+      url: https://github.com/gbroques/snake
+    - name: Midwest Home Design Company
+      url: https://github.com/gbroques/midwest-home-design-company
+    - name: Pizza Shop
+      url: https://github.com/gbroques/pizza-shop
+
+- id: 2700
+  name: Computer Organization and Architecture
+  description: Introduces details of computer systems from architectural and organizational points of view. It covers data representation, basic digital logic circuits, memory types and hierarchies, I/O and storage devices, CPU architectures such as RISC, CISC, parallel, and multi-core.
+
+- id: 2750
+  name: System Programming and Tools
+  description: Covers systems programming, scripting, libraries, utilities, and development tools. Additional programming topics include piping, binary files, exception handling, command-line arguments and symbolic debugging. This course also explores tools available in the Unix/Linux environments.
+  projects:
+    - name: Bash Programming Exercise
+      url: https://github.com/gbroques/bash-programming-exercise
+    - name: Sort Random Numbers from stdin Using a Binary Tree
+      url: https://github.com/gbroques/binary-tree-sort-stdin
+    - name: Fun with Named Pipes
+      url: https://github.com/gbroques/fun-with-named-pipes
+
+- id: 3010
+  name: Web Programming
+  description: Provides a survey of current Web technologies including markup languages (such as HTML, CSS, XML), client side languages (such as JavaScript), server side languages (such as PHP), and Web protocols. Client-server computing projects are a course requirement.
+  projects:
+    - name: Web Programming Project
+      url: https://github.com/gbroques/web-programming-project
+
+- id: 3130
+  name: Design and Analysis of Algorithms
+  description: Addresses the design and analysis of fundamental algorithms in computer science. Studies basic sorting algorithms, priority queues, order statistics, search trees, and hash tables. Analysis techniques may involve time and space complexity analysis of both iterative and recursive algorithms, analysis of algorithm correctness, and amortized complexity analysis.
+  projects:
+    - name: Comparing 4 Quicksort Implementations
+      url: https://github.com/gbroques/quicksort-implementations
+    - name: Apply Heapsort on Dynamic Data
+      url: https://github.com/gbroques/heapsort-dynamic-data
+
+- id: 4710
+  name: Mobile And Ubiquitous Computing
+  description: "First course in wireless networking providing a comprehensive treatment of wireless data and telecommunication networks. Topics include recent trends in wireless and mobile networking, wireless coding and modulation, wireless signal propagation, IEEE 802.11a/b/g/n/ac wireless local area networks, 60 GHz millimeter wave gigabit wireless networks, vehicular wireless networks, white spaces, IEEE 802.22 regional area networks, Bluetooth and Bluetooth Smart, wireless personal area networks, wireless protocols for Internet of Things, ZigBee, cellular networks: 1G/2G/3G, LTE, LTE-Advanced, and 5G."
+  projects:
+    - name: "The Blockchain: A Possible Solution for the Internet of Things"
+      url: https://gbroques.github.io/blockchain-iot-paper/
