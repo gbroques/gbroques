@@ -7,7 +7,7 @@ permalink: /blog
 <div class="section typeset">
   <div class="single-measure">
     {% if site.posts == empty %}
-      <h2>There's currently no posts to display!</h1>
+      <h2>There's currently no posts to display!</h2>
     {% endif %}
     {% for post in site.posts %}
       <h2><a class="post-title" href="/{{ post.permalink }}">{{ post.title }}</a></h2>
