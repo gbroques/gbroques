@@ -1,5 +1,6 @@
 - id: 2250
   name: Programming and Data Structures
+  term: Spring 2016
   description: Discusses properties and implementation of abstract data types such as lists, trees, stacks and queues. Introduces procedural and class abstraction, basic program architecture, use of interfaces, modular programming, and file processing.
   projects:
     - name: Wumpus World
@@ -7,6 +8,7 @@
 
 - id: 2261
   name: Object-Oriented Programming
+  term: Fall 2016
   description: Introduces object-oriented concepts, terminology, and notation (UML) using Java. Covers encapsulation, classes, objects, inheritance, and the use of class libraries. Additional topics may include graphical user interfaces, applets, and related tools and technologies.
   projects:
     - name: Snake
@@ -16,12 +18,9 @@
     - name: Pizza Shop
       url: https://github.com/gbroques/pizza-shop
 
-- id: 2700
-  name: Computer Organization and Architecture
-  description: Introduces details of computer systems from architectural and organizational points of view. It covers data representation, basic digital logic circuits, memory types and hierarchies, I/O and storage devices, CPU architectures such as RISC, CISC, parallel, and multi-core.
-
 - id: 2750
   name: System Programming and Tools
+  term: Spring 2017
   description: Covers systems programming, scripting, libraries, utilities, and development tools. Additional programming topics include piping, binary files, exception handling, command-line arguments and symbolic debugging. This course also explores tools available in the Unix/Linux environments.
   projects:
     - name: Bash Programming Exercise
@@ -33,6 +32,7 @@
 
 - id: 3010
   name: Web Programming
+  term: Spring 2017
   description: Provides a survey of current Web technologies including markup languages (such as HTML, CSS, XML), client side languages (such as JavaScript), server side languages (such as PHP), and Web protocols. Client-server computing projects are a course requirement.
   projects:
     - name: Web Programming Project
@@ -40,6 +40,7 @@
 
 - id: 3130
   name: Design and Analysis of Algorithms
+  term: Spring 2017
   description: Addresses the design and analysis of fundamental algorithms in computer science. Studies basic sorting algorithms, priority queues, order statistics, search trees, and hash tables. Analysis techniques may involve time and space complexity analysis of both iterative and recursive algorithms, analysis of algorithm correctness, and amortized complexity analysis.
   projects:
     - name: Comparing 4 Quicksort Implementations
@@ -49,7 +50,84 @@
 
 - id: 4710
   name: Mobile And Ubiquitous Computing
+  term: Spring 2017
   description: "First course in wireless networking providing a comprehensive treatment of wireless data and telecommunication networks. Topics include recent trends in wireless and mobile networking, wireless coding and modulation, wireless signal propagation, IEEE 802.11a/b/g/n/ac wireless local area networks, 60 GHz millimeter wave gigabit wireless networks, vehicular wireless networks, white spaces, IEEE 802.22 regional area networks, Bluetooth and Bluetooth Smart, wireless personal area networks, wireless protocols for Internet of Things, ZigBee, cellular networks: 1G/2G/3G, LTE, LTE-Advanced, and 5G."
   projects:
     - name: "The Blockchain: A Possible Solution for the Internet of Things"
       url: https://gbroques.github.io/blockchain-iot-paper/
+
+- id: 4760
+  name: Operating Systems
+  term: Fall 2017
+  description: "This course covers the structure of a generic operating system, considering in detail the algorithms for interprocess communication, process scheduling, resource management, memory management, file systems, and device management. It presents examples from contemporary operating systems and requires practical projects implemented within a modern operating system or simulator environment."
+  projects:
+    - name: Memory Management
+      url: https://github.com/gbroques/memory-management
+    - name: Resource Management
+      url: https://github.com/gbroques/resource-managment
+    - name: Operating System Simulator
+      url: https://github.com/gbroques/operating-system-simulator
+    - name: Concurrency and Shared Memory
+      url: https://github.com/gbroques/concurrency-and-shared-memory
+
+- id: 4410
+  name: Introduction to Computer Graphics
+  term: Fall 2017
+  description: This course covers the theoretical foundation and algorithms for computer graphics. Students learn the basics of graphics programming for modeling, rendering, and animation of 2D and 3D objects, using standard graphics API. A brief discussion of special graphics hardware, such as GPU, may be included.
+  projects:
+  - name: Teapot Cannoneer
+    url: https://github.com/gbroques/teapot-cannoneer
+
+- id: 4880
+  name: Individual Studies
+  term: Fall 2017
+  description: This course allows a student to pursue individual studies under the supervision of a faculty member. It may include development of a software project.
+  projects:
+  - name: Hedwig
+    url: https://github.com/gbroques/hedwig
+
+- id: 4280
+  name: Program Translation (Compilers)
+  term: Spring 2018
+  description: This course focuses on methods, techniques, and mechanisms used to create the abstraction from high level programming to machine level execution and also requires an individual semester long project.
+  projects:
+    - name: Compiler
+      url: https://github.com/gbroques/compiler
+
+- id: 4500
+  name: Introduction to the Software Profession
+  term: Spring 2018
+  description: This course focuses on software development and on the skills required for success in the software profession. Topics related to software development may include software process, models and views, software architectures, documentation, and testing strategies. Topics related to the profession may include ethics, licensing, copyright, trademarks, and professional conduct. Individual and group projects, research, and presentations may be required in this capstone course.
+  projects:
+    - name: Cozmo Song Match
+      url: https://github.com/gbroques/cozmo-song-match
+    - name: Gerrymandering
+      url: https://github.com/gbroques/gerrymandering
+
+- id: 4300
+  name: Introduction to Artificial Intelligence
+  term: Spring 2018
+  description: This course provides an introduction to artificial intelligence. The list of topics may include search, planning, knowledge-based reasoning, probabilistic inference, machine learning, natural language processing, and practical applications.
+  projects:
+    - name: Missionaries and Cannibals
+      url: https://github.com/gbroques/missionaries-and-cannibals
+    - name: Numerical Tic-tac-toe
+      url: https://github.com/gbroques/numerical-tic-tac-toe
+    - name: Simple Genetic Algorithm
+      url: https://github.com/gbroques/simple-genetic-algorithm
+    - name: Decision Tree
+      url: https://github.com/gbroques/decision-tree
+    - name: Perceptron
+      url: https://github.com/gbroques/perceptron
+
+- id: 4342
+  name: Introduction to Data Mining
+  term: Spring 2018
+  description: This course provides an introduction to data mining principles, algorithms and applications. Topics may include data preprocessing, data transformation, similarity and dissimilarity measures, data representation, classification techniques, association analysis, cluster analysis, regression, dimension reduction, and anomaly detection.
+  projects:
+    - name: Naive Bayes Classifier
+      url: https://github.com/gbroques/naive-bayes
+    - name: K-Means Clustering
+      url: https://github.com/gbroques/k-means
+    - name: DBSCAN
+      url: https://github.com/gbroques/dbscan
