@@ -1,0 +1,24 @@
+- name: Web Design
+  projects:
+    - name: Variety Vending
+      thumbnail: variety-vending-thumbnail.png
+      url: https://gbroques.github.io/variety-vending/
+      description: A single page website for a small vending machine business.
+                   The design features a giant vending machine playing on the rectangular shape of web pages.
+                   Entriely implemented in CSS3 and SVG.
+    - name: Randy's Jewelry
+      thumbnail: randys-jewelry-thumbnail.png
+      url: https://gbroques.github.io/randys-jewelry/
+      description: A landing page for a small jewelry business.
+                   The design takes inspiration from flat design and features a place for business owners to introduce themselves through video.
+    - name: K Rock Productions
+      thumbnail: k-rock-productions-thumbnail.png
+      url: https://gbroques.github.io/k-rock-productions/
+      description: A landing page for a small music production studio.
+                   The design features a bright red to purple gradient to give the page life.
+                   It was a lot of fun designing the SVG music icons.
+    - name: Ketogenic Diet Website
+      thumbnail: ketogenic-diet-website-thumbnail.png
+      url: https://gbroques.github.io/ketogenic-diet-website/
+      description: A website I designed for my brother&rsquo;s paper about ketogenic diets.
+                   Featuring a minimal design with a focus on typography.

@@ -18,25 +18,32 @@ permalink: /portfolio
 		</p>
 		<p>Also be sure to checkout <a href="/coursework">school projects</a> I've written in <b>Java</b>, <b>C/C++</b>, <b>Python</b>, and other various languages.</p>
 		<hr />
-		<h5>Variety Vending</h5>
-		<p>
-			A single page website for a small vending machine business.
-			The design is a giant vending machine that plays on the naturally long rectangular shape of web pages.
-			Almost all the details were implemented with pure css and svg.
-		</p>
-		<p><a href="https://gbroques.github.io/variety-vending/" target="_blank">Open in new page</a></p>
-		<h5>Randy's Jewelry</h5>
-		<p>
-			A landing page for a small jewelry business.
-			The design takes inspiration from flat design trends and features a place for business owners to introduce themselves through video.
-		</p>
-		<p><a href="https://gbroques.github.io/randys-jewelry/" target="_blank">Open in new page</a></p>
-		<h5>K Rock Productions</h5>
-		<p>
-			A landing page for a small music production studio.
-			The design features a bright red to purple gradient to give the page life.
-			I had a lot of fun designing the little svg music icons for this one.
-		</p>
-		<p><a href="https://gbroques.github.io/k-rock-productions/" target="_blank">Open in new page</a></p>
 	</div>
 </section>
+
+<div class="portfolio-gallery typeset">
+	{% for section in site.data.projects %}
+		<div class="portfolio-gallery-section">
+			<div class="portfolio-gallery-section-title">
+				<h2 class="portfolio-gallery-section-title-text">{{ section.name }}</h2>
+				<div class="portfolio-gallery-section-title-underline"></div>
+			</div>
+			<div class="portfolio-gallery-section-contents">
+				{% for project in section.projects %}
+					<div class="portfolio-gallery-card">
+						<a href="{{ project.url }}" target="_blank" class="portfolio-gallery-card-link-wrapper">
+							<img class="portfolio-gallery-card-thumbnail" src="{{ project.thumbnail | prepend: '/assets/img/' | prepend: site.baseurl }}" alt="{{ project.name }}" />
+							<div class="portfolio-gallery-card-text-contents-top">
+									<h6 class="portfolio-gallery-card-title">{{ project.name }}</h6>
+									<p class="portfolio-gallery-card-description">{{ project.description }}</p>
+							</div>
+							<div class="portfolio-gallery-card-text-contents-bottom">
+								<a class="portfolio-gallery-card-open-link" href="{{ project.url }}" target="_blank">Open in new page</a>
+							</div>
+						</a>
+					</div>
+				{% endfor %}
+			</div>
+		</div>
+	{% endfor %}
+</div>

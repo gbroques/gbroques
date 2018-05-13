@@ -1,0 +1,86 @@
+.portfolio-gallery {
+  margin: 0 auto;
+  position: relative;
+  width: 94%;
+
+  &-section {
+    width: 100%;
+
+    &-title {
+      margin-bottom: 4rem;
+      text-align: center;
+      text-transform: uppercase;
+
+      &-text {
+        display: inline;
+      }
+
+      &-underline {
+        width: 70px;
+        height: 4px;
+        background: $headingColour;
+        margin: 15px auto;
+      }
+    }
+
+    &-contents {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+  }
+
+  &-card {
+    max-width: 400px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+
+    &:hover {
+      box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    }
+
+    &-link-wrapper {
+      display: flex;
+      flex-direction: column;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    &-text-contents {
+      &-top {
+        padding: 15px 15px 0 15px;
+      }
+      &-bottom {
+        padding: 0 15px 15px 15px;
+      }
+    }
+
+    &-title {
+      color: $headingColour;
+      text-transform: uppercase;
+    }
+
+    &-thumbnail {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    }
+
+    &-description {
+      color: $bodyColour;
+      @include fontsize(theta, all);
+    }
+
+    &-open-link {
+      @include fontsize(theta, all);
+      text-transform: uppercase;
+      font-weight: 700;
+      display: flex;
+    }
+  }
+}

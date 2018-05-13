@@ -7,3 +7,10 @@ Hosted with GitHub pages at https://groques.com.
 
 * `bundle exec jekyll serve`
 
+## Credits
+
+This project was made possible by the following open source projects:
+
+* [Sassline](https://sassline.com/)
+* [Hamburgers](https://jonsuh.com/hamburgers/)
+
