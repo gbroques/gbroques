@@ -1,4 +1,49 @@
+- name: Machine Learning
+  id: machine-learning
+  projects:
+    - name: Naive Bayes Classifier
+      thumbnail: naive-bayes-thumbnail.png
+      url: https://github.com/gbroques/naive-bayes
+      description: A custom implementation of a Naive Bayes Classifier written from scratch in Python 3.
+    - name: K-Means Clustering
+      thumbnail: k-means-thumbnail.png
+      url: https://github.com/gbroques/k-means
+      description: A k-means clustering implementation in Python.
+    - name: Decision Tree
+      thumbnail: decision-tree-thumbnail.png
+      url: https://github.com/gbroques/decision-tree
+      description: Decision tree implementation with the CART algorithm in Python.
+    - name: Perceptron
+      thumbnail: perceptron-thumbnail.png
+      url: https://github.com/gbroques/perceptron
+      description: Perceptron learning algorithm implemented in Python.
+    - name: DBSCAN
+      thumbnail: dbscan-thumbnail.png
+      url: https://github.com/gbroques/dbscan
+      description: Density-Based Spatial Clustering of Applications with Noise (DBSCAN) implementation in Python.
+
+- name: Artificial Intelligence
+  id: artificial-intelligence
+  projects:
+    - name: Missionaries and Cannibals
+      thumbnail: missionaries-and-cannibals-thumbnail.png
+      url: https://github.com/gbroques/missionaries-and-cannibals
+      description: Solves the missionaries and cannibals problem with iterative deepening search.
+    - name: Numerical Tic-tac-toe
+      thumbnail: numerical-tic-tac-toe-thumbnail.png
+      url: https://github.com/gbroques/numerical-tic-tac-toe
+      description: A numerical tic-tac-toe player written in Python 3 with a 4 x 4 board.
+    - name: Simple Genetic Algorithm
+      thumbnail: simple-genetic-algorithm-thumbnail.png
+      url: https://github.com/gbroques/simple-genetic-algorithm
+      description: A simple genetic algorithm that solves the one max problem.
+    - name: Cozmo Song Match
+      thumbnail: cozmo-song-match-thumbnail.png
+      url: https://github.com/gbroques/cozmo-song-match
+      description: A game where you match the notes of a song by tapping blocks with Cozmo.
+
 - name: Web Design
+  id: web-design
   projects:
     - name: Variety Vending
       thumbnail: variety-vending-thumbnail.png

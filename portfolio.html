@@ -7,23 +7,22 @@ permalink: /portfolio
 	<div class="single-measure">
 		<h1>Portfolio</h1>
 		<p>
-			The following three projects are websites that are representative of my <b>web design</b>, <b>html</b>, and <b>css</b> skills.
-			Each one of them was meticulously hand-crafted and built to be mobile optimized.
-			They're all inspired by real companies.
-			Be sure to resize the window for each one to see how they respond to different device sizes.
+			The following projects are representative of my <b>machine learning</b>, <b>AI</b>, and <b>web design</b> skills.
 		</p>
+		<ul>
+			{% for section in site.data.projects %}
+				<li><a data-scroll href="#{{ section.id }}">{{ section.name }}</a></li>
+			{% endfor %}
+		</ul>
 		<p>
-			<b>Note:</b> These days I'm no longer building websites, but instead focus on creating software, web applications, and machine learning.
-			Stay tuned for work that is more representative of what I do now.
+			Also see <a href="/coursework">school projects</a> I've written in <b>Java</b>, <b>C/C++</b>, <b>Python</b>, and other various languages for my undergraduate computer science degree.
 		</p>
-		<p>Also be sure to checkout <a href="/coursework">school projects</a> I've written in <b>Java</b>, <b>C/C++</b>, <b>Python</b>, and other various languages.</p>
-		<hr />
 	</div>
 </section>
 
 <div class="portfolio-gallery typeset">
 	{% for section in site.data.projects %}
-		<div class="portfolio-gallery-section">
+		<div class="portfolio-gallery-section" id="{{ section.id }}">
 			<div class="portfolio-gallery-section-title">
 				<h2 class="portfolio-gallery-section-title-text">{{ section.name }}</h2>
 				<div class="portfolio-gallery-section-title-underline"></div>
