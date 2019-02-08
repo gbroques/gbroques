@@ -9,11 +9,11 @@
 title: G Roques
 email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
-  Hi I'm G Roques. This website is my personal blog and portfolio, and is still under active development.
+  Full stack developer with a passion for the web. See my portfolio and resume for more.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "groques.com" # the base hostname & protocol for your site
 twitter_username: jekyllrb
-github_username:  gbroqus
+github_username:  gbroques
 
 # Build settings
 markdown: kramdown

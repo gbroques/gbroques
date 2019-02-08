@@ -1,3 +1,38 @@
+- name: Full Stack Web Development
+  id: full-stack-web-development
+  projects:
+    - name: Receipt Itemizer
+      thumbnail: receipt-itemizer-thumbnail.png
+      url: https://cryptic-reaches-94169.herokuapp.com/
+      description: Personal budgeting app to extract, track, and categorize line items on receipts.
+                   Hosted on Heroku. Request a demo, or to see the code.
+
+- name: Web Design
+  id: web-design
+  projects:
+    - name: Variety Vending
+      thumbnail: variety-vending-thumbnail.png
+      url: https://gbroques.github.io/variety-vending/
+      description: A single page website for a small vending machine business.
+                   The design features a giant vending machine playing on the rectangular shape of web pages.
+                   Entriely implemented in CSS3 and SVG.
+    - name: Randy's Jewelry
+      thumbnail: randys-jewelry-thumbnail.png
+      url: https://gbroques.github.io/randys-jewelry/
+      description: A landing page for a small jewelry business.
+                   The design takes inspiration from flat design and features a place for business owners to introduce themselves through video.
+    - name: K Rock Productions
+      thumbnail: k-rock-productions-thumbnail.png
+      url: https://gbroques.github.io/k-rock-productions/
+      description: A landing page for a small music production studio.
+                   The design features a bright red to purple gradient to give the page life.
+                   It was a lot of fun designing the SVG music icons.
+    - name: Ketogenic Diet Website
+      thumbnail: ketogenic-diet-website-thumbnail.png
+      url: https://gbroques.github.io/ketogenic-diet-website/
+      description: A website I designed for my brother&rsquo;s paper about ketogenic diets.
+                   Featuring a minimal design with a focus on typography.
+
 - name: Machine Learning
   id: machine-learning
   projects:
@@ -41,29 +76,3 @@
       thumbnail: cozmo-song-match-thumbnail.png
       url: https://github.com/gbroques/cozmo-song-match
       description: A game where you match the notes of a song by tapping blocks with Cozmo.
-
-- name: Web Design
-  id: web-design
-  projects:
-    - name: Variety Vending
-      thumbnail: variety-vending-thumbnail.png
-      url: https://gbroques.github.io/variety-vending/
-      description: A single page website for a small vending machine business.
-                   The design features a giant vending machine playing on the rectangular shape of web pages.
-                   Entriely implemented in CSS3 and SVG.
-    - name: Randy's Jewelry
-      thumbnail: randys-jewelry-thumbnail.png
-      url: https://gbroques.github.io/randys-jewelry/
-      description: A landing page for a small jewelry business.
-                   The design takes inspiration from flat design and features a place for business owners to introduce themselves through video.
-    - name: K Rock Productions
-      thumbnail: k-rock-productions-thumbnail.png
-      url: https://gbroques.github.io/k-rock-productions/
-      description: A landing page for a small music production studio.
-                   The design features a bright red to purple gradient to give the page life.
-                   It was a lot of fun designing the SVG music icons.
-    - name: Ketogenic Diet Website
-      thumbnail: ketogenic-diet-website-thumbnail.png
-      url: https://gbroques.github.io/ketogenic-diet-website/
-      description: A website I designed for my brother&rsquo;s paper about ketogenic diets.
-                   Featuring a minimal design with a focus on typography.

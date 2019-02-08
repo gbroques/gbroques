@@ -1,43 +1,23 @@
-// Footer demo styles.
-// ---------------------------------------
-
 .global-footer {
+  text-align: center;
 
-  p {
-    @include fontsize(eta, all);
-
-    color: $captionColour;
-    font-family: unquote(map-get($headingtype, font-family));
-    font-style: normal;
-    font-weight: map-get($headingtype, regular);
+  & .social-icons-container {
     padding: 1rem 0;
     margin: 0;
-    text-align: center;
-  }
-}
 
-.heart {
-  fill: #F8BBD0;
-  position: relative;
-  width: 13px;
-  margin-left: 7px;
-  transition: .3s ease-in-out;
-  cursor: pointer;
-  top: 1px;
+    & .social-icon:first-child {
+      margin-right: 3rem;
+    }
 
-  &:hover {
-    animation: heart-pulse 1s ease infinite,
-  }
-}
+    & .social-icon svg {
+      fill: #9E9E9E;
+      transition: fill 250ms ease-in-out;
+      width: 2rem;
+      height: 2rem;
+    }
 
-@keyframes heart-pulse {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.3);
-  }
-  100% {
-    transform: scale(1);
+    & .social-icon svg:hover {
+      fill: #BDBDBD;
+    }
   }
 }
