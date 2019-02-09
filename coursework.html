@@ -5,7 +5,7 @@ permalink: /coursework
 ---
 
 <h1>Coursework</h1>
-<p>The following is a sampling of courses I've taken for my Bachelor's in Computer Science at the University of Missouri - St. Louis.</p>
+<p>The following is a sampling of courses I've taken for my <a target="_blank" href={{ "/assets/bachelor-of-science-computer-science-umsl-g-roques-degree.pdf" | prepend: site.baseurl }}>Bachelor's in Computer Science at the University of Missouri - St. Louis</a>.</p>
 <ul>
 	{% for course in site.data.courses %}
 		<li><a data-scroll href="#{{ course.id }}">{{ course.name }}</a></li>
@@ -14,17 +14,19 @@ permalink: /coursework
 
 {% for course in site.data.courses %}
 
-	<h3 id="{{ course.id }}">{{ course.name }}</h3>
-	<p class="caption">{{ course.term }}</p>
-	<p><b>Course Description:</b> {{ course.description }}</p>
-	{% if course.projects %}
-		<p><b>Featured Projects:</b></p>
-		<ul>
-			{% for project in course.projects %}
-			<li><a href="{{ project.url }}" target="_blank">{{ project.name }}</a></li>
-			{% endfor %}
-		</ul>
-	{% endif %}
-	<hr />
+	<div style="margin-bottom: 3rem">
+		<h3 id="{{ course.id }}">{{ course.name }}</h3>
+		<p class="caption">{{ course.term }}</p>
+		<p><b>Course Description:</b> {{ course.description }}</p>
+		{% if course.projects %}
+			<p><b>Featured Projects:</b></p>
+			<ul>
+				{% for project in course.projects %}
+				<li><a href="{{ project.url }}" target="_blank">{{ project.name }}</a></li>
+				{% endfor %}
+			</ul>
+		{% endif %}
+	</div>
+
 
 {% endfor %}
